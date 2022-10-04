@@ -1,86 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Workout</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>keep on running</title>
+	<link rel="stylesheet" href="workout_style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <audio>
+    <source src="sound.mp3"></source>
+  </audio>
 </head>
+
+<script>
+  var audio = document.getElementById("sound");
+    audio.play();
+
+  var audio = $("#sound")[0];
+    $("sound").mouseenter(function() {
+    audio.play();
+  });
+
+</script>
+
 <body>
-  <heading>
-    <h1>Workout</h1>
-  </heading>
 
-  text on the bottom & horizontal scrolling/speed(with image margins/padding)(gaberiel) / audio element (image 6) playing in the 
+	<div class="horizontal">
 
-  <ol>
-    <li>Get changed into the most comfortable clothes
-      <img src="images/1.jpeg">
-    </li>
-  
+    <img src="frame1.gif" class="frame">
+    
+    <div class="block_container">
+        <div class="block">
+          <div class="text-box"><p>1️⃣<br> Get changed into the most comfortable clothes</p></div>
+          <div class="image-box"><img src="images/1.png"></div>
+        </div>
 
-    <li>Pack a water bottle, keys, and earphones</li>
-    <img src="images/2.jpg">
+        <div class="block">
+          <div class="text-box"><p>2️⃣<br> Pack a water bottle, keys, and earphones</p></div>
+          <div class="image-box"><img src="images/2.png"></div>
+        </div>
 
-    <li>Head out to the nearest gym</li>
-    <img src="images/3.jpg">
+        <div class="block">
+          <div class="text-box"><p>3️⃣<br> Head out to the nearest gym</p></div>
+          <div class="image-box"><img src="images/3.png"></div>
+        </div>
 
-    <li>Find a space at the gym where you can stretch, then follow a 5 minute stretching video on YouTube</li>
-    <img src="images/4.jpg">
+        <div class="block">
+          <div class="text-box"><p>4️⃣<br> Find a space at the gym where you can stretch, then follow a 5 minute stretching video on YouTube</p></div>
+          <div class="image-box"><img src="images/4.png" class="stretch"></div>
+        </div>
 
-    <li>After stretching, sanitize and wipe a treadmill</li>
-    <img src="images/5.jpg">
+        <div class="block">
+          <div class="text-box"><p>5️⃣<br> After stretching, sanitize and wipe a treadmill</p></div>
+          <div class="image-box"><img src="images/5.png" class="wipe"></div>
+        </div>
 
-    <li>Use your earphones to listen to a podcast or songs, or watch youtube videos for distraction as needed</li>
-    <img src="images/6.jpg">
+        <div class="block sound">
+          <div class="text-box"><p>6️⃣<br> Use your earphones to listen to a podcast or songs, or watch youtube videos for distraction as needed</p></div>
+          <div class="image-box"><img src="images/6.png"></div>
+        </div>
 
-    <li>Start to walk on the treadmill slowly for up to 5 minutes</li>
-    <img src="images/7.jpg">
+        <div class="block">
+          <div class="text-box"><p>7️⃣—8️⃣<br> Start to walk on the treadmill slowly for up to 5 minutes. Then, start to walk faster for 10 minutes, faster than 4.0 speed</p></div>
+          <div class="image-box"><img src="images/7.png"></div>
+        </div>
 
-    <li>Start to walk faster for 10 minutes, faster than 4.0 speed</li>
-    <img src="images/8.jpg">
+        <div class="block">
+          <div class="text-box"><p>9️⃣<br> Drink some water</p></div>
+          <div class="image-box"><img src="images/8.png"></div>
+        </div>
 
-    <li>Drink some water</li>
-    <img src="images/9.jpg">
+        <div class="block">
+          <div class="text-box"><p>🔟<br> Run/jog again for a minute approximately at 7.0 speed</p></div>
+          <div class="image-box"><img src="images/9.png"></div>
+        </div>
 
-    <li>Run/jog for a minute approximately at 7.0 speed</li>
-    <img src="images/10.jpg">
+        <div class="block run">
+          <div class="image-box"><img src="images/11.png"></div>
+        </div>
 
-    <li>Walk again for 10 minutes, faster than 4.0 speed</li>
-    <img src="images/11.jpg">
+        <div class="block run">
+          <div class="image-box"><img src="images/10.png"></div>
+        </div>
+      
 
-    <li>Drink some water</li>
-    <img src="images/12.jpg">
+        <div class="block">
+          <div class="text-box"><p>1️⃣1️⃣<br> Walk slowly again for up to 5 minutes</p></div>
+          <div class="image-box"><img src="images/7.png"></div>
+        </div>
 
-    <li>Run/jog again for a minute approximately at 7.0 speed</li>
-    <img src="images/13.jpg">
+        <div class="block">
+          <div class="text-box"><p>1️⃣2️⃣<br> Drink some water</p></div>
+          <div class="image-box"><img src="images/12.png"></div>
+        </div>
 
-    <li>Walk slowly again for up to 5 minutes</li>
-    <img src="images/14.jpg">
+        <div class="block">
+          <div class="text-box"><p>1️⃣3️⃣<br> Stop the treadmill</p></div>
+          <div class="image-box"><img src="images/13.png"></div>
+        </div>
 
-    <li>Drink some water</li>
-    <img src="images/15.jpg">
+        <div class="block">
+          <div class="text-box"><p>1️⃣4️⃣<br> Sanitize the treadmill</p></div>
+          <div class="image-box"><img src="images/14.png" class="wipe"></div>
+        </div>
 
-    <li>Stop the treadmill</li>
-    <img src="images/16.jpg">
+        <div class="block">
+          <div class="text-box"><p>1️⃣5️⃣<br> Head back home</p></div>
+          <div class="image-box"><img src="images/15.png"></div>
+        </div>
+    </div>
 
-    <li>Sanitize the treadmill</li>
-    <img src="images/16.jpg">
-
-    <li>Head back home</li>
-    <img src="images/17.jpg">
-  </ol>
+	</div>
+ 
+	
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,145 @@
+/* Your CSS Here! */
+
+body {
+    background-color: rgb(220, 198, 198);
+}
+
+.container {
+    width: 700px;
+    height: 750px;
+    margin: 150px auto 0 auto;
+    position: relative;
+    background-color: rgb(153, 171, 203);
+}
+
+.leaves {
+    position: absolute;
+   /* width: 80px;
+    height: 130px;
+    background-color: green;
+    border-radius: 100px;
+    margin: 20px; */
+}
+
+.one {
+    background-color: rgb(121, 192, 88);
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    border-radius: 100px;
+    margin-top: 100px;
+    margin-left: 300px;
+    color: white;
+    transform: rotate(15deg);
+}
+
+.one_stem {
+    border-top: 5px solid rgb(79, 54, 23);
+    position: absolute;
+    margin-top: 30px;
+    width: 180px;
+    height: 1px;
+    margin-top: 280px;
+    margin-left: 240px;
+    transform: rotate(90deg);
+}
+
+.one_stem_short {
+    border-top: 5px solid rgb(79, 54, 23);
+    position: absolute;
+    margin-top: 30px;
+    width: 50px;
+    height: 1px;
+    margin-top: 300px;
+    margin-left: 310px;
+    transform: rotate(100deg);
+}
+
+.two {
+    background-color: darkgreen;
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 180px;
+    margin-left: 240px;
+    color: white;
+    transform: rotate(-15deg);
+}
+
+.two_stem {
+    border-top: 5px solid rgb(79, 54, 23);
+    position: absolute;
+    margin-top: 30px;
+    width: 150px;
+    height: 1px;
+    margin-top: 300px;
+    margin-left: 215px;
+    transform: rotate(70deg);
+}
+
+.three {
+    background-color: rgb(93, 155, 93);
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    border-radius: 100px;
+    margin-top: 150px;
+    margin-left: 350px;
+    color: white;
+    transform: rotate(30deg);
+}
+
+.four {
+    background-color: rgb(63, 125, 63);
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    border-radius: 100px;
+    margin-top: 250px;
+    margin-left: 400px;
+    color: white;
+    transform: rotate(70deg);
+}
+
+.pot{
+    background-color: rgb(29, 42, 81);
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 360px;
+    border-radius: 5px;
+}
+
+.candle {
+    background-color: rgb(130, 111, 78);
+    width: 120px;
+    height: 200px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 470px;
+    border-radius: 10px;   
+}
+
+.flower {
+    background-color: rgb(164, 230, 233);
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 620px;
+    border-radius: 10px;   
+}
+
+.text {
+    display: block;
+    margin: 20px auto;
+    width: 500px;
+
+}
+
+p {
+    color: blue;
+    text-align: center;
+}
