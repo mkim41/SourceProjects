@@ -86,5 +86,19 @@ body {
     }
 }
 
+/*
+    feedback:
+    1. adjust the speeding to be unequal with more keyframes
+    2. reverse horizontal marquee - treadmill
+    3. animating gradient
+    4. cursor change
+    5. has() pseudo selector (https://developer.mozilla.org/en-US/docs/Web/CSS/:has)
+    
+    - click to jump to a pt
+
+    repeat (12, 1fr)
+    flexbox - inline
+*/
+
 
 
