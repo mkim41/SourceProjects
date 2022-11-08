@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to me</title>
+</head>
+
+<style>
+    body {
+        font-family:sans-serif;
+    }
+
+    .big-type{ 
+        font-size:60px; 
+        font-family:sans-serif;
+    }
+
+    div {
+        margin: 10px;
+    }
+
+    input {
+        margin: 20px;
+    }
+</style>
+
+<body>
+    <div class>
+        <h2>Talk to me 💬</h2>
+
+
+        <form action="" method="get" class="form-example">
+            <div class="form-example">
+              <label for="color">Color</label>
+              <input name="color-name" id="color" placeholder="Type color">
+            </div>
+          </form>
+
+          <div class="form-example">
+            <label type="search" for="word-search">Replace text</label>
+            <input id="search" placeholder="Type text" onkeyup="highlightTyped()">
+          </div>
+
+          <div class="form-example">
+            <label for="column-input">Number of columns</label>
+            <!-- changing the attriute to "range" makes this a slider -->
+            <input type="range" value="1" min = "1" max="5" name="column-input" id="columns">
+          </div>
+        </form>
+
+
+
+
+        <div class="text">
+            <p>Only think about one thing at a time. Don't get greedy. Let your imagination just wonder around when you're doing these things. Brown is such a nice color. Maybe there's a little something happening right here. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying.</p>
+
+            <p>Follow the lay of the land. It's most important. Everyone wants to enjoy the good parts - but you have to build the framework first. Son of a gun. Of course he's a happy little stone, cause we don't have any other kind. And maybe a little bush lives there.</p>
+                
+            <p>Let's make a nice big leafy tree. Don't fight it, use what happens. In your world you have total and absolute power. I'm gonna add just a tiny little amount of Prussian Blue. The little tiny Tim easels will let you down. Steve wants reflections, so let's give him reflections.</p>
+                
+            <p>This piece of canvas is your world. Let's have a little bit of fun today. And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen.</p>
+                
+            <p>Let's build some happy little clouds up here. Remember how free clouds are. They just lay around in the sky all day long. Absolutely no pressure. You are just a whisper floating across a mountain. Just a little indication. Talk to trees, look at the birds. Whatever it takes. Here's another little happy bush.</p>
+                
+            <p>Let's make some happy little clouds in our world. Let's make a happy little mountain now. Now we don't want him to get lonely, so we'll give him a little friend. I'm sort of a softy, I couldn't shoot Bambi except with a camera.</p>
+                
+            <p>How to paint. That's easy. What to paint. That's much harder. And I will hypnotize that just a little bit. No pressure. Just relax and watch it happen. You're the greatest thing that has ever been or ever will be. You're special. You're so very special. We might as well make some Almighty mountains today as well, what the heck. How do you make a round circle with a square knife? That's your challenge for the day.</p>
+        </div>
+
+
+        <div class="form-example">
+            <label for="name-input">Signature</label>
+            <input id="name">
+        </div>
+        <div class="big-type">
+            
+        </div>
+
+    </div>
+
+
+<script>
+    //get the body element
+    let inputEl = document.querySelector('#color');
+
+    //add an event listner that handles input events from the user
+    inputEl.addEventListener("input",()=>{
+        //get the current value of input
+        let value = inputEl.value;
+        console.log(value);
+
+        //how do we set the background color of the body?
+        //get the body element
+        let bodyEl = document.querySelector('body');
+
+        //set the background color
+        bodyEl.style.color = value;
+    });
+
+
+
+    //https://stackoverflow.com/questions/52743841/find-and-highlight-word-in-text-using-js
+
+    let typed = document.querySelector(".text").innerHTML;
+
+    function highlightTyped() {
+        let searchInputEl = document.querySelector('#search');
+        searchInputEl.addEventListener("input",() =>{
+            let typedText = document.querySelector('#search').value;
+            let highlight = document.querySelector(".text");
+
+            var re = new RegExp(search, 'g');
+
+            if (typedText.length > 0) {
+                highlight.innerHTML = typed.replace(re, typedText);
+            } else highlight.innerHTML = typed;
+        });
+
+    }
+
+
+
+    
+    let columnInputEl = document.querySelector("#columns");
+    columnInputEl.addEventListener("input",() =>{
+        let value = columnInputEl.value;
+        let textEl = document.querySelector(".text");
+
+        textEl.style.columns = value;
+    });
+
+
+    let nameInputEl = document.querySelector("#name");
+    nameInputEl.addEventListener("input",()=>{
+        let value = nameInputEl.value;
+        let nameEl = document.querySelector(".big-type");
+        nameEl.innerText = value;
+    });
+
+    let fontSize = 10;
+    window.addEventListener ('keydown', (event) => {
+        let key = event.key;
+        let nameEl = document.querySelector(".big-type");
+
+        //if key = ' ', nothing happens, but if it's anything else, then the code runs
+        if (key !== ' ' ) {
+
+            fontSize = fontSize + 3;
+            nameEl.style.fontSize = Math.floor(Math.random()*50) + 'px';
+            nameEl.style.letterSpacing = Math.floor(Math.random()*10) + 'px';
+            nameEl.style.opacity = fontSize/10 + 'px';
+
+            //below not working (if arrow down key is pressed, reduce the fontSize);
+            // if (key === '40' && '46'){
+            // fontSize = fontSize - 5;
+        }
+
+        });
+
+
+     
+    //command+D for selecting and replacing multiple tag at once
+
+</script>
+</body>
+
+
+
+</html>
