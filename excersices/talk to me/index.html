@@ -110,19 +110,16 @@
         searchInputEl.addEventListener("input",() =>{
             let typedText = document.querySelector('#search').value;
             let highlight = document.querySelector(".text");
-
-            var re = new RegExp(search, 'g');
+            var re = new RegExp(/\S/,'gi');
 
             if (typedText.length > 0) {
-                highlight.innerHTML = typed.replace(re, typedText);
+                // highlight.innerHTML = typed.replace(re, typedText);
+                highlight.innerHTML = typed.replace(typedText, `<span style="color: yellow;">${typedText}</span>`);
             } else highlight.innerHTML = typed;
         });
 
     }
 
-
-
-    
     let columnInputEl = document.querySelector("#columns");
     columnInputEl.addEventListener("input",() =>{
         let value = columnInputEl.value;
