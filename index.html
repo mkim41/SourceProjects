@@ -4,20 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>mina kim — source</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
 </head>
+
+<style>
+  body {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-image: url(bg.jpeg);
+    background-size: cover;
+  }
+
+  a {color: white;}
+
+  .heading{
+    width: 100%;
+    height: vh;
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 30px;
+  }
+
+  .projects {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin: 100px auto;
+  }
+
+  .excersices {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin: 100px auto;
+  }
+  
+
+  li {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    border-radius: 60%;
+  }
+
+  .p {
+    background: radial-gradient(circle, rgba(108,147,96,1) 0%, rgba(36,64,52,1) 100%);
+  }
+
+  .e {
+    background: radial-gradient(circle, rgba(207,99,93,1) 0%, rgba(85,27,38,1) 100%);
+  }
+
+
+
+</style>
+
+
+
 <body>
-  <heading>
-    <h1>mina's projects for source</h1>
+  <div class="heading">
+    <h1>mina's projects for <a href="https://source.f22.href.blue/">source</a></h1>
   </heading>
 
-  <ol>
-    <li><a href="project-1/workout_index.html">project 1</a></li>
-    <li><a href="project-2/index.html">project 2</a></li>
-    <li><a href="project-3/flock_html/index.html">project 3</a></li>
-    
+  <div class="projects">
+    <li class="p"><a href="project-1/workout_index.html">workout</a></li>
+    <li class="p"><a href="project-2/index.html">future food ingredients</a></li>
+    <li class="p"><a href="project-3/flock_html/index.html">flocks of brands</a></li>
+  </div>
 
-    
-  </ol>
+  <div class="excersices">
+    <li class="e"><a href="excersices/coding for life/index.html">coding from life</a></li>
+    <li class="e"><a href="excersices/talk to me/index.html">talk to me</a></li>
+    <li class="e"><a href="excersices/weather/index.html">weather</a></li> 
+  </div>
 </body>
 </html>
